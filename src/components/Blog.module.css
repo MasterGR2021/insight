@@ -1,0 +1,64 @@
+.section {
+    margin: 0 auto 1rem auto;
+    max-width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px dashed black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: none;
+    }
+
+    .left img {
+        width: 20rem;
+    }
+}
+
+.left img {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.right {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.right .category {
+    max-width: 50px;
+
+    padding: .2rem .2rem;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.right .info {
+    margin-bottom: 8px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.right .summary {
+    font-size: 14px;
+}

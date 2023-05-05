@@ -1,0 +1,145 @@
+.header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+}
+
+.overlayClose {
+    display: none;
+}
+
+.overlayOpen{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar .navlinks {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    width: 50vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    z-index: 2;
+}
+
+.navbar .navlinks li {
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.navbar .navlinks li a {
+    padding: 0.5rem;
+}
+
+.navbar .navlinks li:last-child {
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .navlinks li button {
+    padding: 0.5rem 5rem;
+}
+
+.navOpen {
+    display: flex;
+}
+
+.navClose {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.closeMenu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, white, black, white) 1;
+
+        padding: 40px 60px;
+
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    .navbar .navlinks {
+        position: inherit;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        list-style: none;
+        padding-top: 0;
+    }
+
+    .navlinks li {
+        color: black;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .closeMenu {
+        display: none;
+    }
+
+    .navbar .navlinks li:last-child {
+        gap: 0;
+        flex-direction: row;
+    }
+
+    .navbar .navlinks li button {
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+.brand {
+    color: black;
+    font-weight: bold;
+}
+
+.navlinks li:last-child{
+    display: flex;
+}

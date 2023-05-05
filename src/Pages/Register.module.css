@@ -1,0 +1,51 @@
+.registerContainer {
+    width: 50%;
+    min-width: 30rem;
+
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.registerContainer h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.registerContainer form{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.registerContainer form label {
+    margin-bottom: 10px;
+}
+
+.registerContainer form input{
+    margin-bottom: 15px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    padding: .6rem 1rem;
+}
+
+.registerContainer form button {
+    width: 100%;
+    padding: .8rem 1rem;
+    margin-bottom: 15px;
+}
+
+.registerContainer form span {
+    text-align: center;
+    font-size: 14px;
+}
+
+.registerContainer form span a {
+    text-decoration: underline;
+}

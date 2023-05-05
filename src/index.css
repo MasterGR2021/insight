@@ -1,0 +1,109 @@
+:root {
+  --light-gray: #F4F4F4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+button,
+button:visited,
+button:active {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+  /*width: 6rem;*/
+
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  color: white;
+  border: 2px solid black;
+  background-color: black;
+
+  border-radius: 4px;
+}
+
+.btn-secondary {
+  /*width: 6rem;*/
+
+  padding: 0.5rem 1rem;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+
+  border-radius: 4px;
+}
+
+.cta {
+  background-color: #16a34a;
+
+  border: 2px solid transparent;
+
+  border-radius: 4px;
+}
+
+.cta-secondary {
+  color: white;
+  background-color: #dc2626;
+  display: flex;
+  gap: .5rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+input[type="email"],
+input[type="text"]{
+  letter-spacing: 1.2px;
+}
+
+input[type="password"] {
+  letter-spacing: 3px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  max-width: 1500px;
+}
+
+.Toastify__toast-container {
+  margin-top: 4rem;
+}
+
+.Toastify__toast {
+  border-radius: 0;
+  box-shadow: none;
+  border: 2px dashed black;
+}
+
+.Toastify__progress-bar {
+  background-color: black;
+}
